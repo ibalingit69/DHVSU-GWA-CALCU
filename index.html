@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="guidelines-container">
+        <h3>Guidelines for President's List:</h3>
+        <ul>
+            <li>Minimum GWA requirement: 1.25</li>
+            <li>No failing grades</li>
+            <li>No incomplete grades</li>
+        </ul>
+        <h3>Guidelines for Dean's List:</h3>
+        <ul>
+            <li>Minimum GWA requirement: 1.26 - 1.75</li>
+            <li>No failing grades</li>
+            <li>No incomplete grades</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <img id="logo" src="logo.png" alt="Logo"> 
+        <h2>GWA Calculator</h2>
+        <form id="gwaForm">
+            <div id="inputs">
+                <div class="input-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject Name">
+                    <input type="number" id="units" name="units" placeholder="Units">
+                    <input type="number" id="grade" name="grade" placeholder="Grade">
+                </div>
+            </div>
+            <input type="button" id="addSubject" value="Add Subject">
+            <input type="submit" value="Calculate GWA">
+            <input type="reset" value="Reset">
+        </form>
+        <div id="subjectList"></div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
